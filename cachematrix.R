@@ -1,8 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
-
+## makeCacheMatix function uses the lexical scope in R to cache the matrix and its inverse
+## it returns a list of following four functions 
+## set the value of the matrix
+## get the value of the matrix
+## set the value of the inverse
+## get the value of the inverse
 makeCacheMatrix <- function(x = matrix()) {
 	
 	i <- NULL
@@ -17,8 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## cacheSolve returns the inverse of the matrix from the cache if it already exists
+## otherwise it calculates the inverse, updates the cache and returns the inverse
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 
@@ -33,4 +35,3 @@ cacheSolve <- function(x, ...) {
 	i
 }
 
-#commit
